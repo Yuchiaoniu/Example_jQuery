@@ -21,9 +21,9 @@ $(document).ready
                     .fadeIn(1200)
                     .fadeOut(1200, function () {
                         $('#accordion, .nav')
-                        .css("visibility", "visible")
-                        .hide()
-                        .fadeIn(1200);
+                            .css("visibility", "visible")
+                            .hide()
+                            .fadeIn(1200);
                     });
 
             }
