@@ -1,0 +1,47 @@
+<!-- if未登入，就輸出下列圖示，if登入就輸出資料庫的對應名稱 -->
+
+<img id="login_img" src="../global/img/login_black.png">
+<div class="member_form dialog">
+    <!-- if未登入，點選就輸出登入表單，if登入就沒有表單出現 -->
+    <form action="logincheck.php" method="post" name="myForm">
+
+        <div class="title">登入</div>
+        </br></br>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <!-- 放一個假的input防止chrome自動填入 -->
+            <label class="form-label" for="form3Example3">帳號</label>
+            <input name="account" type="text" class="form-control form-control-lg" placeholder="請輸入使用者名稱"
+                value="請輸入使用者名稱" />
+
+        </div>
+        </br>
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example4">密碼</label>
+            <input name="password" type="password" class="form-control form-control-lg" placeholder="請輸入密碼" />
+
+        </div>
+        </br>
+        <div class="d-flex justify-content-between align-items-center">
+
+            <div class="form-check mb-0">
+                <label style="display:none" class="form-check-label" for="form2Example3">
+
+                </label>
+                <input type="" class="form-check-input me-2" type="checkbox" value="記住我" id="form2Example3" />
+
+            </div>
+            <a href="#!" class="text-body">忘記密碼</a>
+        </div>
+
+        <div class="text-center text-lg-start mt-4 pt-2">
+            <input onclick="check_data()" type="button" class="btn btn-lg" value="提交" style="
+          background-color: rgb(168, 224, 247); 
+          color:white; 
+          padding: 10px 50px; ">
+        </div>
+        </br>
+    </form>
+</div>

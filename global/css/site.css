@@ -1,0 +1,159 @@
+@media only screen and (max-width: 600px) {
+
+
+    #login_img{ width:20% !important;}
+    .nav {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .wd-50{width:80% !important;}
+    .new_content {
+        font-size: 100% !important;
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #login_img{width:20% ;}
+    .nav {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .nav {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+
+    .nav {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+    #login_img{width:20% ;}
+
+    .nav {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    .container .nav #login_img:hover {
+        cursor: point;
+    }
+
+
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left{float: left;}
+
+.none {
+    visibility: hidden;
+}
+
+.topic_removing {
+    color: black
+}
+
+.new_content {
+    font-size:larger;
+}
+
+.center{
+    align-items: center;
+}
+
+.flex{
+    display:flex;
+}
+.margin-auto{
+    margin: auto;
+}
+.wd-50{width:50%;}
+.text-align-center{text-align: center;}
+a {
+    color: blue !important;
+    cursor: pointer !important;
+
+}
+
+.none {display:none;}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#login_img{width:5%;}
+
+.dialog {
+    display: none;
+}
+
+#accordion {
+    visibility: hidden;
+}
+.nav{visibility: hidden;}
+#logo-img{max-width:20%;height: auto;}
+#logo-show{width:60%;}
+
+  .show-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 設定容器高度為整個螢幕高度，可根據需求調整 */
+    visibility: hidden;
+  }
+  
+  #logo-show {
+    max-width: 100%; /* 限制圖片寬度不超過容器寬度 */
+    max-height: 100%; /* 限制圖片高度不超過容器高度 */
+  }
+
+
+

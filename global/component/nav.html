@@ -1,0 +1,1945 @@
+<style>
+    table,
+    th,
+    td {
+        border: 5px solid rgb(238, 226, 147);
+        height: 20%;
+
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .photo {
+        width: 10%
+    }
+
+    .tag {
+        width: 20%;
+    }
+
+    .topic {
+        width: 60%;
+    }
+
+    .button {
+        width: 10%;
+    }
+
+    body {
+        background-color: rgb(238, 238, 238);
+    }
+
+
+    .container {
+        margin-top: 10vh;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .btn {
+        width: 100%;
+        height: 10%;
+        font-size: small;
+    }
+
+    #iframe {
+        margin-left: 40%;
+        height: 90%;
+        width: 60%;
+    }
+
+    #nav {
+        width: 40%;
+        overflow-x: hidden;
+        float: left;
+        height: 90%;
+    }
+
+    strong {
+        font-size: larger;
+    }
+
+    a {
+        font-size: larger;
+    }
+
+    .btn {
+        font-size: larger;
+    }
+
+    .accordion-button {
+        font-size: large;
+    }
+</style>
+<script>
+
+    var obj = new Object();
+    obj['cat'] = function () {
+        var a = 1, b = 2;
+        c = a + b;
+        return c;
+    };
+    console.log(obj.cat());
+
+</script>
+
+<script>
+
+    let nav
+    function collapse_nav() {
+
+
+        console.log(nav)
+
+        function open_nav() {
+            nav = 2;
+            document.getElementById("nav").style.width = "40%";
+            document.getElementById("iframe").style.width = "60%";
+            document.getElementById("iframe").style.marginLeft = "40%";
+            document.getElementById("nav").style.transitionDuration = "1.5s";
+            document.getElementById("iframe").style.transitionDuration = "1.5s";
+        }
+
+        function close_nav() {
+            nav = 1;
+            document.getElementById("nav").style.width = "0%";
+            document.getElementById("iframe").style.width = "100%";
+            document.getElementById("iframe").style.marginLeft = "0%";
+            document.getElementById("nav").style.transitionDuration = "1.5s";
+            document.getElementById("iframe").style.transitionDuration = "1.5s";
+        }
+
+
+        if (nav == 2 | !nav) {
+
+            close_nav();
+        }
+        else {
+            open_nav();
+
+
+
+        }
+    }
+
+</script>
+
+<div class="background">
+
+    <!-- 一門學問由範疇-field->分支-branch->理論-theory->主題-topic(學科-discipline)
+        ->定律-laws(基礎原則-fundamental)->專有名詞-term
+        ，依次由上往下做區分 -->
+    <!-- 例如:數學範疇->算數(分支)->四則運算(理論)->加法(主題)->交換律(定律)->減號(專有名詞) -->
+    <!-- 一門學問由基礎範疇->進階範疇->應用範疇->跨學科科學(實際工程)由下往上做演變 -->
+    <!-- 科學分為三大種類；自然科學、社會科學、形式科學、應用科學、跨學科科學 -->
+    <!-- 形式科學分為七大種類；邏輯學、數學、統計、計算機科學、數據科學、資訊科學、系統科學 -->
+    <!-- 自然科學分為兩大種類；生命科學、物理科學 -->
+    <!-- 社會科學分為許多種類；凡是與生物活動有關;政治、人文地理、心理學、經濟、歷史等等，但語言是個例外，該學科的分類經常被輕描淡寫 -->
+    <!-- 可以說是形式科學衍伸出自然科學再延伸出社會科學 -->
+
+    <!-- 語文區 -->
+    <p style="margin-top:5vh;">
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_literature"
+            aria-expanded="false" aria-controls="collapse_literature">
+            語文
+        </button>
+    <div class="collapse" id="collapse_literature">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            中文
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>修辭法</strong><br>
+                            <a>明喻</a><br>
+                            <a>暗喻</a><br>
+                            <a>擬人</a><br>
+                            <a>擬物</a><br>
+                            <a>反襯</a><br>
+                            <a>對稱</a><br>
+                            <a>雙襯</a><br>
+                            <a>設問</a><br>
+                            <a>借代</a> 傾國傾城<br>
+                            <a>雙關</a><br>
+                            <a>誇飾</a><br>
+                            <a>摹寫</a>針對感官感受做形容<br>
+                            <a>倒反</a>說反話<br>
+                            <a>象徵</a><br>
+                            <a>感嘆</a><br>
+                            <a>引用</a><br>
+                            <a>藏詞</a><br>
+                            <a>錯別</a><br>
+                            <a>析字</a><br>
+                            <a>轉品</a><br>
+                            <a>婉曲</a><br>
+                            <a>示現</a><br>
+                            <a>呼告</a><br>
+                            <a>回文</a><br>
+                            <a>頂真</a><br>
+                            <a>類疊</a><br>
+                            <a>層遞</a><br>
+                            <a>對偶</a><br>
+                            <a>排比</a><br>
+                            <a>鑲嵌</a><br>
+                            <a>錯綜</a><br>
+                            <a>倒裝</a><br>
+                            <a>跳脫</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>寫作範例</strong><br>
+                            <a>中國神話</a><br>
+                            <a>著名小說</a><br>
+                            <a>希臘神話</a><br>
+                            <a>北歐神話</a><br>
+                            <a>古埃及神話</a><br>
+                            <a>印度神話</a><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            英文
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>字根、字首、字尾</strong><br>
+                            <a>-ies</a><br>
+                            <a>-al</a><br>
+                            <a>-ly</a><br>
+                            <a>-ate</a><br><a>-ation</a><br>
+                            <a>-ary</a><br>
+                            <a>-age</a><br>
+                            <a>-ant-</a><br><a>-ent-</a><br>
+                            <a>-ive</a><br>
+                            <a>-ity</a><br>
+                            <a>-er</a><br><a>-or</a><br>
+                            <!-- relativity =ate+ive+ity-->
+                            <a>-ist</a><br>
+                            <a>-ic</a><br>
+                            <a>ab-</a><br>
+                            <a>co-</a><br>
+                            <a>com-</a><br>
+                            <a>con-</a><br>
+                            <a>ex-</a><br>
+                            <a>im-</a><br>
+                            <a>in-</a><br>
+                            <a>-ology</a><br>
+                            <a>-ology</a><br>
+                            <a>-ology</a><br>
+                            <a>數學字首</a><br>
+                            <a>hom-</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>文法</strong><br>
+                            <a>名詞</a><br>
+                            <a>動詞</a><br>
+                            <a>副詞</a><br>
+                            <a>介系詞</a><br>
+                            <a>時態</a><br>
+                            <a>語氣</a><br>
+                            <a>助動詞</a><br>
+                            <a>特別分類</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>寫作</strong><br>
+                        </div>
+                        <div class="accordion-body"><strong>托福</strong><br>
+                        </div>
+                        <div class="accordion-body"><strong>多益</strong><br>
+                        </div>
+                        <div class="accordion-body"><strong>雅思</strong><br>
+                        </div>
+                        <div class="accordion-body"><strong>sat</strong><br>
+                        </div>
+                        <div class="accordion-body"><strong>act</strong><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            小說分享
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>中文</strong><br>
+                            <a>中國神話</a><br>
+                            <a>著名小說</a><br>
+                            <a>希臘神話</a><br>
+                            <a>北歐神話</a><br>
+                            <a>古埃及神話</a><br>
+                            <a>印度神話</a><br>
+
+                        </div>
+                        <div class="accordion-body"><strong>英文</strong><br>
+                            <a>中國神話</a><br>
+                            <a>著名小說</a><br>
+                            <a>希臘神話</a><br>
+                            <a>北歐神話</a><br>
+                            <a>古埃及神話</a><br>
+                            <a>印度神話</a><br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 語文區 -->
+
+
+    <!-- 數學區 -->
+
+
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_math"
+            aria-expanded="false" aria-controls="collapse_math">
+            科學
+        </button>
+    <div class="collapse" id="collapse_math">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            數學範疇 - mathematics
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>算術 - arithmetic</strong><br>
+                            <a>四則運算</a><br>
+                            <a>單位度量衡</a><br>
+                            <a>分數</a><br>
+                            <a>小數</a><br>
+                            <a>比率</a><br>
+                            <a>百分比</a><br>
+                            <a>平均值</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>集合論 - set theory</strong><br>
+                            <a>組合集合</a><br>
+                            <a>描述性集合</a><br>
+                            <a>模糊集合</a><br>
+                            <a>內在模型理論</a><br>
+                            <a>大基數</a><br>
+                            <a>集合論確定性</a><br>
+                            <a>集合論強制性</a><br>
+                            <a>基數不變量</a><br>
+                            <a>集合論拓樸</a><br>
+                            <a>機率</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>數字理論 - number theory</strong><br>
+                            <a>自然數 </a><br>
+                            <a>質數(素數) </a><br>
+                            <a>因數、倍數</a><br>
+                            <a>完全數</a><br>
+                            <a>倒數</a><br>
+                            <a>有趣的數</a><br>
+                            <a>連分數(衍伸出勘根定理、微積分等等)</a><br>
+                            <a>幻方、矩陣</a><br>
+                            <a>原根</a><br>
+                            <a>同餘</a><br>
+                            <a>數論函數</a><br>
+                            <a>經典定理</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>代數 - algebra</strong><br>
+                            <a>初等代數 - elementary algebra</a><br>
+                            <a>進階代數 - advanced algebra</a><br>
+                            <a>抽象代數 - abstract algebra</a><br>
+                            <a>線性代數 - linear algebra</a><br>
+                            <a>交換代數 - Commutative algebra</a><br>
+                            <a>同調代數 - homology algebra</a><br>
+                            <a>範疇論 - Category theory</a><br>
+                        </div>
+
+
+                        <div class="accordion-body"><strong>幾何 - geometry</strong><br>
+                            <a>代數幾何 - algebra geometry</a><br>
+                            <a>微分幾何 - differential geometry</a><br>
+                            <a>凸幾何 - Convex geometry</a><br>
+                            <a>離散幾何 - discrete geometry</a><br>
+                            <a>歐基里德幾何 - euclidean geometry</a><br>
+                            <a>非歐基里德幾何 - non-Euclidean geometries</a><br>
+                            <a>解析幾何 - analytic geometry</a><br>
+                            <a>投影幾何 - projective geometry</a><br>
+                            <a>拓樸 - topology</a><br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            進階數學範疇
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>組合學(範圍廣) - combinatorics</strong><br>
+                            <a>枚舉組合</a><br>
+                            <a>分析組合</a><br>
+                            <a>分區理論</a><br>
+                            <a>圖論</a><br>
+                            <a>設計理論</a><br>
+                            <a>有限幾何</a><br>
+                            <a>序理論</a><br>
+                            <a>矩陣理論</a><br>
+                            <a>極值組合</a><br>
+                            <a>概率組合</a><br>
+                            <a>代數組合</a><br>
+                            <a>單詞組合</a><br>
+                            <a>幾何組合</a><br>
+                            <a>拓樸組合</a><br>
+                            <a>算術組合</a><br>
+                            <a>無限組合</a><br>
+                            <a>組合優化</a><br>
+                            <a>編碼理論</a><br>
+                            <a>離散幾何計算</a><br>
+                            <a>組合學動力系統</a><br>
+                            <a>組合物理</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>數學分析 - Mathematical Analysis</strong><br>
+                            <a>實變函數論 - real analysis</a><br>
+                            <a>複分析 - Complex analysis</a><br>
+                            <a>泛函分析 - Functional analysis</a><br>
+                            <a>調和分析 - Harmonic analysis</a><br>
+                            <a>微分方程式 - Differential equation</a><br>
+                            <a>測量 - measure</a><br>
+                            <a>數值分析 - numerical analysis</a><br>
+                            <a>向量分析 - vector calculus</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>統計學 - statistics</strong><br>
+                            <a>數據收集 - data collection</a><br>
+                            <a>描述性統計 - descriptive statistics</a><br>
+                            <a>推論統計 - inferential statistics</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>三角學 - trigonometry</strong><br>
+                            <a>平面三角學 - plane trigonometry</a><br>
+                            <a>球面三角學 - spherical trigonometry</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>微積分 - calculus</strong><br>
+                            <a>微分 - differential</a><br>
+                            <a>積分 - integral calculus</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            應用數學範疇
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong title="Engineering Management intro">工程管理介紹</strong><br>
+                            <a>系統工程學 - Systems Engineering</a><br>
+                            <a>系統工程管理 - Systems Engineering Management</a><br>
+                            <a>系統工程流程 - Systems Engineering Techical Process</a><br>
+                            <a>控制工程學 - Control Engineering,</a><br>
+                            <a>建模與仿真(M&S) - Modeling And Simulation</a><br>
+                            <a>流程控制工程學 - Process Engineering</a><br>
+                            <a>工藝設計與分析 - Process Design And Analysis</a><br>
+                            <a>系統結構 - System Architecture</a><br>
+                            <a>系統優化 - Optimization</a><br>
+                            <a>系統動力 - System Dynamics</a><br>
+                            <a>系統分析 - Systems Analysis</a><br>
+                            <a>統計分析 - Statistical Analysis</a><br>
+                            <a>系統決策 - Decision Making</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>運籌學(組織) - Operations Research</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>精算學 - actuarial science</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>經濟學 - Economics</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>會計學 - Accounting</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>計算物理學 - Computational physics</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>計算化學 - computational chemistry</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>計算生物學 - Computational Biology</strong><br>
+
+                            <a>精算(概率與統計-精準計算)</a><br>
+                            <a>經濟學(生產力模型、會計、統計)</a><br>
+                            <a>計算機科學(科技跳躍)</a><br>
+                            <a>環境控制(模控論)</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 數學區 -->
+
+
+    <!-- 物理區 -->
+
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_physical"
+            aria-expanded="false" aria-controls="collapse_physical">
+            進階科學
+        </button>
+    <div class="collapse" id="collapse_physical">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            物理範疇 - physical
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>經典物理 - physic</strong><br>
+                            <a>概論 - Introduction</a><br>
+                            <a>力學 - mechanics</a><br>
+                            <a>聲學 - acoustic</a><br>
+                            <a>光學 - optics</a><br>
+                            <a>光譜學 - Spectroscopy</a><br>
+                            <a>光度學 - Photometry</a><br>
+                            <a>熱力學 - thermodynamics</a><br>
+                            <a>原子物理 - atomic physics</a><br>
+                            <a>核子物理 - nuclear physics</a><br>
+                            <a>機械物理 - mechanical physics</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>現代物理 - physic</strong><br>
+                            <a>量子力學 - quantum mechanics</a><br>
+                            <a>狹義相對論 - special relativity</a><br>
+                            <a>廣義相對論 - general relativity</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>電學 - electrical science</strong><br>
+                            <a>基本電學 - Basic Electricity</a><br>
+                            <a>電磁學 - electromagnetism</a><br>
+                            <a>電路學 - circuitry</a><br>
+                            <a>電子學 - electronics</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>化學 - Chemistry</strong><br>
+                            <a>有機化學 - organic chemistry</a><br>
+                            <a>無機化學 - inorganic chemistry</a><br>
+                            <a>分析化學 - analytical chemistry</a><br>
+                            <a>物理化學 - physical chemistry</a><br>
+                            <!-- 物理化學含電化學-Electrochemistry、化學動力學(反應動力學)-Chemical kinetics -->
+                            <a>生物化學 - biochemistry</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>地理 - Geography</strong><br>
+                            <a>人文地理 - human geography</a><br>
+                            <a>物理地理 - physics geography</a><br>
+                            <a>生物地理 - Biogeography</a><br>
+                            <a>環境地理學 - Environmental geography</a><br>
+
+                        </div>
+                        <div class="accordion-body"><strong>生物物理 - Biophysics</strong><br>
+                            <a>生物聲學 - bioacoustics</a><br>
+                            <a>生物電學 - bioelectricity</a><br>
+                            <a>生物能源 - bioenergetics</a><br>
+                            <a>生物力學 - biomechanics</a><br>
+                            <a>醫學物理 - medical physics</a><br>
+                            <a>生物光學 - biooptics</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            進階物理範疇
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>地球科學 - Earth Science</strong><br>
+                            <a>概論</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>地質學 - Geology</strong><br>
+                            <a>物理地質學 - physical geology</a><br>
+                            <a>歷史地質學 - historical geology</a><br>
+                            <a>環境地質學 - environmental geology</a><br>
+                            <a>地質構造學 - Geo Tectonics</a><br>
+                            <a>結構地質學 - Structural geology</a><br>
+                            <a>地貌學 - Geomorphology</a><br>
+                            <a>水文學 - Hydrology</a><br>
+                            <a>土壤學 - Pedology</a><br>
+                            <a>冰河學 - glaciology</a><br>
+                            <a>晶體學 - Crystallography</a><br>
+                            <a>礦物學 - Mineralogy</a><br>
+                            <a>岩石學 - Petrology</a><br>
+                            <a>地層學 - Stratigraphy</a><br>
+                            <a>地球物理學 - Geophysics</a><br>
+                            <a>地球化學 - Geochemistry</a><br>
+                            <a>工程地質學 - Engineering Geology</a><br>
+                            <a>經濟地質學 - Economic Geology</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>大氣科學 - Atmospheric science</strong><br>
+                            <a>氣象學 - Meteorology</a><br>
+                            <a>氣候學 - Climatology</a><br>
+                            <a>高層大氣物理學 - Aeronomy</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>氣象學 - Meteorology</strong><br>
+                            <a>靜態氣象學 - dynamic Meteorology</a><br>
+                            <a>動態氣象學 - Synoptic Meteorology</a><br>
+                            <a>大氣化學 - Atmospheric chemistry</a><br>
+                            <a>大氣物理 - Atmospheric physics</a><br>
+                            <a>天氣數值預測與建模 - Numerical weather prediction and modeling</a><br>
+                            <a>熱帶海洋氣象學 - Tropical and oceanographic meteorology</a><br>
+                            <a>航空學 - Aviation</a><br>
+
+                        </div>
+                        <div class="accordion-body"><strong>海洋學 - Oceanography</strong><br>
+                            <a>生物海洋學 - Biological Oceanography</a><br>
+                            <a>化學海洋學 - Chemical Oceanography</a><br>
+                            <a>地質海洋學 - Geological Oceanography</a><br>
+                            <a>物理海洋學 - Physical Oceanography</a><br>
+                        </div>
+
+
+                        <div class="accordion-body"><strong>天文學 - Astronomy</strong><br>
+                            <a>天體生物學 - Astrobiology</a><br>
+                            <a>天文測量學 - Astrometry</a><br>
+                            <a>天體物理學 - Astrophysics</a><br>
+                            <a>宇宙學 - Cosmology</a><br>
+                            <a>太陽物理學 - Heliophysics</a><br>
+                            <a>日震學 - Helioseismology</a><br>
+                            <a>星震學 - Asteroseismology</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            應用物理範疇
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>連續介質力學 - Continuum mechanics</strong><br>
+                            <a>固體力學 - solid mechanics</a><br>
+                            <a>流體力學 - Astrophysics</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>固體力學 - solid mechanics</strong><br>
+                            <a>彈性 - Elasticity </a><br>
+                            <a>可塑性 - Plasticity </a><br>
+                        </div>
+                        <div class="accordion-body"><strong>流體力學 - Astrophysics</strong><br>
+                            <a>牛頓流體 - Newtonian fluid</a><br>
+                            <a>非牛頓流體 - Non-Newtonian fluid</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>空氣動力學 - Aerodynamics</strong><br>
+                            <a>升力 - lift</a><br>
+                            <a>推力 - thrust</a><br>
+                            <a>阻力 - drug</a><br>
+                            <a>重力 - weight</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>行星科學 - Planetary Science</strong><br>
+                            <a>行星地質學(占星學) - planetary geology</a><br>
+                            <a>宇宙化學 - cosmochemistry</a><br>
+                            <a>理論行星學 - Theoretical planetology</a><br>
+                            <a>系外行星學 - exoplanetology</a><br>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            跨科別應用領域
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>工程物理學 - Engineering physics</strong><br>
+                            <a>材料科學 - Materials Science Engineering</a><br>
+                            <a>化學工程學 - Chemical Engineering</a><br>
+                            <a>土木工程學 - Civil Engineering</a><br>
+                            <a>電機工程學 - Electrical Engineering</a><br>
+                            <a>機械工程學 - Mechanical Engineering</a><br>
+                            <a>計算機工程學 - Computer Engineering</a><br>
+                            <a>地質工程 - Geological Engineering</a><br>
+                            <a>海洋工程 - Marine Engineering</a><br>
+                            <a>航空航天工程 - Aerospace Engineering</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>材料科學 - Materials science</strong><br>
+                            <a>結構-Structure</a><br>
+                            <a>性能-Properties</a><br>
+                            <a>加工-Processing</a><br>
+                            <a>熱力學-Thermodynamics</a><br>
+                            <a>動力學-Kinetics</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>化學工程學 - Chemical Engineering</strong><br>
+                            <a>化學反應工程學 - Chemical Reaction Engineering</a><br>
+                            <a>核子工程學 - Nuclear Engineering</a><br>
+                            <a>生物工程學 - BioEngineering</a><br>
+
+                        </div>
+                        <div class="accordion-body"><strong>土木工程學 - Civil Engineering</strong><br>
+                            <a>海岸工程學 - Coastal Engineering</a><br>
+                            <a>建築工程學 - Construction Engineering</a><br>
+                            <a>地震工程學 - Earthquake Engineering</a><br>
+                            <a>環境工程學 - Environmental Engineering</a><br>
+                            <a>材料科學工程學 - Materials Science And Engineering</a><br>
+                            <a>岩土工程學 - Geotechnical Engineering</a><br>
+                            <a>結構工程學 - Process Design And Analysis</a><br>
+                            <a>事故重現工程學 - Forensic Engineering</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>機械工程學 - Mechanical Engineering</strong><br>
+                            <a>製造工程(生產) - Manufacturing Engineering</a><br>
+                            <a>機械設計工程(設計) - Mechanical Design</a><br>
+                            <a>系統動力學和控制(分析) - System Dynamics And Control</a><br>
+                            <a>交通系統工程(應用) - Transportation Engineering</a><br>
+                            <a>流體力學工程 - Fluid Mechanics Engineering</a><br>
+                            <a>固體力學工程 - Solid Mechanics Engineering</a><br>
+                            <a>材料科學工程 - Materials Engineering And Processing</a><br>
+                            <a>自動化與控製或熱工程 - Automation And Control Engineering</a><br>
+                            <a>熱工程 - Thermal Engineering</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>電機工程 - Electrical Engineering</strong><br>
+                            <a>電學 - Electrical science</a><br>
+                            <a>電磁學 - Electromagnetism</a><br>
+                            <a>電路學 - Circuitry</a><br>
+                            <a>電子學 - Electronics</a><br>
+                            <a>光學 - Optics</a><br>
+                            <a>光子學 - Photonics</a><br>
+                            <a>光伏電池 - Photovoltaics</a><br>
+                            <a>儀表控制工程(ICE) - Instrumentation And Control Engineering</a><br>
+                            <a>通信工程 - Telecommunications Engineering</a><br>
+                            <a>計算機工程 - Computer Engineering</a><br>
+                            <a>系統工程 - Systems Engineering</a><br>
+                            <a>射頻工程 - Radio-frequency Engineering</a><br>
+                            <a>微波工程 - Microwave Engineering</a><br>
+                            <a>電力工程學 - Power Engineering</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>計算機工程 - Computer Engineering</strong><br>
+                            <a>硬體工程 - Hard Engineering</a><br>
+                            <a>軟體工程 - Software Engineering</a><br>
+                            <a>網際網路 - Networking</a><br>
+                            <a>機器人 - Robotics</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>地質工程 - Geological Engineering</strong><br>
+                            <a>地下水資源- Groundwater resources</a><br>
+                            <a>地熱能- Geothermal energy</a><br>
+                            <a>地下汙染- Subsurface contamination</a><br>
+                            <a>邊坡穩定性 - Slope stability</a><br>
+                            <a>環境場地設計 - Environmental site design</a><br>
+                            <a>礦產石油探勘生產 - Mineral and petroleum exploration</a><br>
+                            <a>地貌地形分析 - Geomorphology and terrain analysis</a><br>
+
+                        </div>
+                        <div class="accordion-body"><strong>海事工程 - Marine Engineering</strong><br>
+                            <a>海洋工程 - Ocean engineering</a><br>
+                            <a>機械工程 - Mechanical Engineering</a><br>
+                            <a>電氣工程 - Electrical Engineering</a><br>
+                            <a>電子工程 - Electronic Engineering</a><br>
+                            <a>計算機科學 - Computer Science</a><br>
+                            <a>電子和機器人 - Electronics and Robotics</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>航空航天工程 - Aerospace Engineering</strong><br>
+                            <a>航空工程 - Aeronautical Engineering</a><br>
+                            <a>宇航工程- Astronautical Engineering</a><br>
+                            <a>航空電子工程- Avionics Engineering</a><br>
+                            <a>航空航天工程- Aerospace Engineering</a><br>
+                            <a>火箭科學- Rocket Science</a><br>
+                            <a>航空電子工程- Avionics Engineering</a><br>
+                            <a>空氣推力- Air Propulsion</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 物理區 -->
+
+    <!-- 生物(含醫學)、化學-->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_biology"
+            aria-expanded="false" aria-controls="collapse_biology">
+            生物
+        </button>
+    <div class="collapse" id="collapse_biology">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            生物 - biology
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>生物分類學 - Taxonomy</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>費米悖論 - Fermi paradox</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物細胞學 - Cytology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物組織學 - Histology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>細胞生物學 - Cell Biology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物型態學 - morphology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物解剖學 - Anatomy</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            進階生物範疇
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>胚胎學 - Embryology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生態學 - Ecology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>遺傳學 - Genetics</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>優生學 - Eugenics</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>進化論學 - Evolution</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>古生物學 - Palaeontology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>外生生物學 - Exobiology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            應用生物範疇
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>人類生物學 - human biology</strong><br>
+                            <a>第二單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>動物學 - zoology</strong><br>
+                            <a>第二單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>植物學 - botany</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>微生物學 - microbiology</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                        </div>
+
+                        <div class="accordion-body"><strong>病毒學 - Virology</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            跨科別應用領域
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+
+                        <div class="accordion-body"><strong>生物工程學 - BioEngineering</strong><br>
+                            <a>生物醫學工程 - Biomedical Engineering</a><br>
+                            <a>生化工程 - Biochemical Engineering</a><br>
+                            <a>生物系統工程 - Biological Systems Engineering</a><br>
+                            <a>生物過程工程 - Bioprocess Engineering</a><br>
+                            <a>環境健康工程 - Environmental Health Engineering</a><br>
+                            <a>人為因素和人體工程學 - Human Factors And Ergonomics Engineering</a><br>
+                            <a>生物技術 - Biotechnology</a><br>
+                            <a>仿生學 - Bionics & Biomimetics</a><br>
+                            <a>生物電工程 - Bioelectrical Engineering</a><br>
+                            <a>生物力學工程 - Biomechanical Engineering</a><br>
+                            <a>生物機器人 - Biorobotics</a><br>
+                            <a>生物列印 - Bioprinting</a><br>
+                            <a>系統生物學 - Systems Biology:</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物過程工程學 - Bioprocessing Engineering</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>基因工程學 - Genetic Engineering</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>生物醫學 - Biomedical Engineering</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 計算機、環保科學-->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_enviroment_science" aria-expanded="false"
+            aria-controls="collapse_enviroment_science">
+            高階應用科學
+        </button>
+    <div class="collapse" id="collapse_enviroment_science">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            環境科學
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>古生物學</strong><br>
+                            <a>統計與概率</a><br>
+                            <a>三角學</a><br>
+                            <a>集合論</a><br>
+                            <a>微積分</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            模控論
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>煉金</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第一單元</a><br>
+                            <a>第一單元</a><br>
+                            <a>第一單元</a><br>
+                            <a>第一單元</a><br>
+                            <a>第一單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            計算機科學
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            醫學
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 化學區 -->
+    <!-- 建築學區討論 -->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_constructure"
+            aria-expanded="false" aria-controls="collapse_constructure">
+            建築學區
+        </button>
+    <div class="collapse" id="collapse_constructure">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            建築學概論
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>建築風格</strong><br>
+                            <a>蒙兀兒建築</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            建築聲學
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            建築力學
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            建築科學
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            建築材料學
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            建築熱工學
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            建築通風學
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            建築供暖學
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            建築排水學
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            建築環保學
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 建築學區 -->
+    <!-- 穿著、髮型、藝術、音樂與舞蹈區討論 -->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_art"
+            aria-expanded="false" aria-controls="collapse_art">
+            社會科學
+        </button>
+    <div class="collapse" id="collapse_art">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            烹飪
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>地區美食</strong><br>
+                            <a>食譜</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            舞蹈
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            時尚
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a>髮型</a><br>
+                            <a>衣服</a><br>
+                            <a>鞋子</a><br>
+                            <a>服飾配件</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            音樂
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            畫作
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            電影學
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 音樂與舞蹈區 -->
+
+    <!-- 體育學區討論 -->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_sport"
+            aria-expanded="false" aria-controls="collapse_sport">
+            身心培養
+        </button>
+    <div class="collapse" id="collapse_sport">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            球類運動
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            戰技
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            生活自身保養保潔
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 體育學區 -->
+
+
+
+
+    <!-- 社會科學:宗教區、毒品討論、心理學、腦部機制討論 -->
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_adult"
+            aria-expanded="false" aria-controls="collapse_adult">
+            成人技術討論
+        </button>
+    <div class="collapse" id="collapse_adult">
+        <div class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            宗教學
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>道教</strong><br>
+                            <a>玄學</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            哲學
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>形而上學</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            心理學
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            各級毒品討論
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            腦科學
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><strong>上學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                        <div class="accordion-body"><strong>下學期</strong><br>
+                            <a>第一單元</a><br>
+                            <a>第二單元</a><br>
+                            <a>第三單元</a><br>
+                            <a>第四單元</a><br>
+                            <a>第五單元</a><br>
+                            <a>第六單元</a><br>
+                            <a>第七單元</a><br>
+                            <a>第八單元</a><br>
+                            <a>第九單元</a><br>
+                            <a>第十單元</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 宗教區 -->
+
+    </div>
+</div>
