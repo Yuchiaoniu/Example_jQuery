@@ -1,72 +1,75 @@
 
 $(document).ready
     (
-        
-        
+
+
         function () {
 
-            
 
-              $('#accordion').accordion({
+
+            $('#accordion').accordion({
                 active: false,
                 collapsible: true,
                 heightStyle: "content",
                 animate: { duration: 1000 }
-              });
+            });
 
-              if($('.show-container').length > 0){
+            if ($('.show-container').length > 0) {
                 $('.show-container')
-                .css("visibility", "visible")
-                .hide()
-                .fadeIn(200)
-                .fadeOut(200, function(){$('#accordion, .nav')
-                .css("visibility", "visible")
-                .hide()
-                .fadeIn(200);});
+                    .css("visibility", "visible")
+                    .hide()
+                    .fadeIn(1200)
+                    .fadeOut(1200, function () {
+                        $('#accordion, .nav')
+                        .css("visibility", "visible")
+                        .hide()
+                        .fadeIn(1200);
+                    });
 
-                }
-              else{
+            }
+            else {
                 $('#accordion').css("visibility", "visible").hide().fadeIn(200)
-              ;}
-              
+                    ;
+            }
+
             $('a').css("color", "blue");
             //先將目標使用visibility隱藏起來，以避免載入前穿幫。載入的時候將hidden拿掉，然後在使用hide和fadein做搭配產生漸入漸出的效果
             //end accordion
 
-            
 
-      //先點擊，然後更改網址，但不重新整理，網友直接輸入網址的時候也可以直接進入到該頁面，並且展開對應的h3
 
-      //當你詢問如何在輸入特定網址的時候出現該網頁並且打開特定的h3
+            //先點擊，然後更改網址，但不重新整理，網友直接輸入網址的時候也可以直接進入到該頁面，並且展開對應的h3
+
+            //當你詢問如何在輸入特定網址的時候出現該網頁並且打開特定的h3
 
             // 當點擊標題時，更改網址並展開對應內容
-            $("h3").click(function(event) {
-            event.preventDefault(); // 阻止默認的點擊行為
-    
-            var newUrl = $(this).data("url");
-            if (newUrl) {
-                history.pushState(null, "", newUrl); // 更改URL但不重新整理頁面
-            }
+            $("h3").click(function (event) {
+                event.preventDefault(); // 阻止默認的點擊行為
+
+                var newUrl = $(this).data("url");
+                if (newUrl) {
+                    history.pushState(null, "", newUrl); // 更改URL但不重新整理頁面
+                }
             });
 
             var currentUrl = window.location.href;
             $("#urlInput").val(currentUrl);
 
             //讓相對應的data-url變成active的狀態
-            
-                var urlParams = new URLSearchParams(window.location.search);
-                var h3Id = urlParams.get("h3"); // 取得 h3 參數的值
-                if (h3Id) {
-                  var h3Index = $("#accordion h3").filter("[id='" + h3Id + "']").index() / 2; // 取得對應 h3 元素在 accordion 中的索引位置
-                  
-                  if(h3Id==0){$("#accordion").accordion({ active: false });}
-                  // 先將 accordion 折疊起來
-                  
-                  
-                  // 初始化 accordion 並設置 active 屬性
-                  $("#accordion").accordion({ active: h3Index });
-                }  
-              
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var h3Id = urlParams.get("h3"); // 取得 h3 參數的值
+            if (h3Id) {
+                var h3Index = $("#accordion h3").filter("[id='" + h3Id + "']").index() / 2; // 取得對應 h3 元素在 accordion 中的索引位置
+
+                if (h3Id == 0) { $("#accordion").accordion({ active: false }); }
+                // 先將 accordion 折疊起來
+
+
+                // 初始化 accordion 並設置 active 屬性
+                $("#accordion").accordion({ active: h3Index });
+            }
+
 
             //登入表單設定
             // dialog function
@@ -87,9 +90,9 @@ $(document).ready
                     $('.dialog').dialog('open');
                 }
             );//end click
-            
 
-            
+
+
 
 
             //category============================================================================================
